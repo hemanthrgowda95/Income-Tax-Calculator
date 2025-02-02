@@ -42,4 +42,5 @@ document.addEventListener('DOMContentLoaded', function () {
                 [Infinity, 0.30]
             ]);
         } else {
-            const hraExemption[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/antydemant/lessons-2020/tree/0c6095f45bfd841914ac8e7e25f8c9df273dea69/02-closure-and-context%2Fhomework%2FREADME.md?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/GCES-Batch-2018-Minor-project-group/Minor_Project_SBR/tree/167f153115d7e61f490ce79d977f6405b389de83/PAGES%2FtaxCalculator.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "2")
+            const hraExemption = calculateHRA(salary, hra);
+            totalDedu[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/antydemant/lessons-2020/tree/0c6095f45bfd841914ac8e7e25f8c9df273dea69/02-closure-and-context%2Fhomework%2FREADME.md?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/GCES-Batch-2018-Minor-project-group/Minor_Project_SBR/tree/167f153115d7e61f490ce79d977f6405b389de83/PAGES%2FtaxCalculator.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "2")

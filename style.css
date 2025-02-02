@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -24,12 +24,14 @@ h1 {
     text-align: center;
     color: #333;
     font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 h2 {
     text-align: center;
     color: #444;
     font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
 form {
@@ -59,7 +61,7 @@ input[type="number"] {
 button {
     padding: 15px;
     margin-top: 20px;
-    background-color: #1a73e8;
+    background-color: #008CBA;
     color: white;
     border: none;
     border-radius: 6px;
@@ -68,7 +70,7 @@ button {
 }
 
 button:hover {
-    background-color: #1665c1;
+    background-color: #005f73;
 }
 
 .result-container {
@@ -125,7 +127,7 @@ button:hover {
 }
 
 input:checked + .slider {
-    background-color: #1a73e8;
+    background-color: #008CBA;
 }
 
 input:checked + .slider:before {
