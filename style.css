@@ -20,6 +20,11 @@ h1 {
     color: #333;
 }
 
+h2 {
+    text-align: center;
+    color: #333;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -50,10 +55,18 @@ button:hover {
     background-color: #45a049;
 }
 
-#result {
+.result-container {
     margin-top: 20px;
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step-active {
+    display: block;
 }
