@@ -18,27 +18,28 @@
                 <label for="other-income">Enter your other income (e.g., rental, interest):</label>
                 <input type="number" id="other-income" required>
             </div>
-            <div class="section">
+            <div class="section old-regime-section">
                 <h2>Deductions</h2>
                 <label for="hra">Enter your HRA deduction:</label>
-                <input type="number" id="hra" required>
+                <input type="number" id="hra">
 
                 <label for="section80c">Enter your Section 80C deduction:</label>
-                <input type="number" id="section80c" required>
+                <input type="number" id="section80c">
 
                 <label for="other-deductions">Enter other deductions:</label>
-                <input type="number" id="other-deductions" required>
+                <input type="number" id="other-deductions">
             </div>
             <label>Choose Tax Regime:</label>
-            <div>
-                <input type="radio" id="old-regime" name="regime" value="Old" checked>
+            <div class="regime-selection">
+                <input type="radio" id="old-regime" name="regime" value="Old">
                 <label for="old-regime">Old Regime</label>
-                <input type="radio" id="new-regime" name="regime" value="New">
+                <input type="radio" id="new-regime" name="regime" value="New" checked>
                 <label for="new-regime">New Regime</label>
             </div>
             <button type="submit" id="calculate-tax">Calculate Tax</button>
         </form>
         <div id="result" class="result-container"></div>
+        <div class="developer-name">Developed by Hemanth</div>
     </div>
     <script src="script.js"></script>
 </body>
