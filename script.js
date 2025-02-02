@@ -1,9 +1,20 @@
-document.getElementById('tax-form').addEventListener('submit', function(e) {
+document.getElementById('continue-step-1').addEventListener('click', function() {
+    document.querySelector('.form-step-active').classList.remove('form-step-active');
+    document.querySelectorAll('.form-step')[1].classList.add('form-step-active');
+});
+
+document.getElementById('back-step-2').addEventListener('click', function() {
+    document.querySelector('.form-step-active').classList.remove('form-step-active');
+    document.querySelectorAll('.form-step')[0].classList.add('form-step-active');
+});
+
+document.getElementById('deductions-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
     const salary = parseFloat(document.getElementById('salary').value);
     const hra = parseFloat(document.getElementById('hra').value);
     const section80c = parseFloat(document.getElementById('section80c').value);
+    const otherDeductions = parseFloat(document.getElementById('other-deductions').value);
     const regime = document.querySelector('input[name="regime"]:checked').value;
 
     let totalDeductions, taxableIncome, tax;
@@ -16,7 +27,7 @@ document.getElementById('tax-form').addEventListener('submit', function(e) {
             [Infinity, 0.30]
         ]);
     } else {
-        totalDeductions = section80c + hra + 50000; // 80C + HRA + Standard Deduction
+        totalDeductions = section80c + hra + otherDeductions + 50000; // 80C + HRA + Other Deductions + Standard Deduction
         taxableIncome = Math.max(salary - totalDeductions, 0);
         tax = computeTax(taxableIncome, [
             [250000, 0.00], [500000, 0.05], [1000000, 0.20],
